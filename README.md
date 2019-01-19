@@ -8,3 +8,8 @@ This code is set up in a modular manner.
 * `utils` folder contains code for `Bunch` (a container to replace dict in RM-SORN) and other tool scripts, including `backup`, `datalog`, `pca` and `plotting`.
 * `examples` folder contains code for specific experiment parameters and process, implemented by `param_xxxx` and `experiment_xxxxTask`, respectively.
 Notably, the default parameters script is included in `common` folder, user can cover the default params via setting `param_xxxx` in `examples`. 
+## Getting started
+The tasks for RM-SORN here is the same as in our paper, including: counting task, Motion prediction and Motion generation.
+To run experiments, navigate to the `common` folder and run `python test_single.py param_xxxx`.
+If you are planning to define extra task, please follow the  format setting in `experiments` in `common` to accomplish `experiment_xxxxTask`, as well as a `param_xxxx` file.
+In particular, `experiment_RMTask` is utilized to run the simulation on varied task difficult $n$, 10 networks per task.
