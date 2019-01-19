@@ -19,4 +19,8 @@ Table 1. Default Parameter for network structure
 
 | N_e | N_i | N_u_e | N_u_i | eta_stdp | eta_ip | sp_prob | sp_initial | noise_sig | T_e_max | T_e_min | T_i_max | T_i_min |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| 200 | 40 | 10 | 0 | 0.001 | 0.001 | 0.1 | 0.001 | 0 | 1.0 | 0 | 0.5 | 0 |
+| 200 | 0.2* N_e | 0.05* N_e | 0 | 0.001 | 0.001 | 0.1 | 0.001 | 0 | 1.0 | 0 | 0.5 | 0 |
+
+Table 2. Network parameters for Counting task
+
+| N_e | 
