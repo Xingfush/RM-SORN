@@ -30,23 +30,23 @@ Table 2. Default Parameter for RM-SORN training
 Table 3. Network parameters for Counting task
 
 | N_e | N_o | N_i | N_u_e | N_u_i | T_o_max | T_o_min | T_e_max | T_e_min | T_i_max | T_i_min | eta_stdp (W_ee) | eta_stdp (W_oe) | eta_ip_e | eta_ip_o | h_ip_e | h_ip_o | punishment | recurrent_reward | window_size |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 200 | 6 | 0.2* N_e | 0.1* N_e | 0 | 0.5 | 0 | 1.0 | 0 | 1.0 | 0 | 0.005| 0.001 | 0.001 | 0.005 | 0.1 | [0.05,0.4,0.05,0.05,0.4,0.05] | True | False | 0|
 
 | N_e | N_o | N_i | N_u_e | N_u_i | T_o_max | T_o_min | T_e_max | T_e_min | T_i_max | T_i_min | eta_stdp (W_ee) | eta_stdp (W_oe) | eta_ip_e | eta_ip_o | h_ip_e | h_ip_o | punishment | recurrent_reward | window_size |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 400 | 6 | 0.2* N_e | 0.1* N_e | 0 | 0.5 | 0 | 1.0 | 0 | 1.0 | 0 | 0.005| 0.001 | 0.002 | 0.001 | 0.1 | [0.05,0.4,0.05,0.05,0.4,0.05] | True | False | 0|
 
 Table 4. Network parameters for Motion predition
 
 | N_e | N_o | N_i | N_u_e | N_u_i | T_o_max | T_o_min | T_e_max | T_e_min | T_i_max | T_i_min | eta_stdp (W_ee) | eta_stdp (W_oe) | eta_ip_e | eta_ip_o | h_ip_e | h_ip_o | punishment | recurrent_reward | window_size |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 200 | n | 0.2* N_e | 0.15* N_e | 0 | 1.0 | 0 | 0.5 | 0 | 1.0 | 0 | 0.001| 0.005 | 0.002 | 0.005 | 0.2 | 1/n | True | False | 20|
 
 Table 4. Network parameters for Motion generation
 
 | N_e | N_o | N_i | N_u_e | N_u_i | T_o_max | T_o_min | T_e_max | T_e_min | T_i_max | T_i_min | eta_stdp (W_ee) | eta_stdp (W_oe) | eta_ip_e | eta_ip_o | h_ip_e | h_ip_o | punishment | recurrent_reward | window_size |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 200 | n | 0.2* N_e | 0.05* N_e | 0 | 0.5 | 0 | 1.0 | 0 | 1.0 | 0 | 0.01| 0.01 | 0.001 | 0.005 | 0.1 | 1/n | True | False | 10|
 
 
