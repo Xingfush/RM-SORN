@@ -4,4 +4,4 @@ Network based on Neural Plasticity Mechanisms*, which is under review in *Intern
 Our RM-SORN model is based on previous SORN and, the network implementation (souce code) is based on the SORN implementation by [Hartmann et al.](https://github.com/chrhartm/SORN).
 ## Code organization
 This code is set up in a modular manner.
-* the 'common' folder contains the code common to all experiments ,including ~rmsorn~, ~synapses~, ~sources~, ~experiment~ and ~experiments~.
+* the `common` folder contains the code common to all experiments ,including ~rmsorn~, ~synapses~, ~sources~, ~experiment~ and ~experiments~.
