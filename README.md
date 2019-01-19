@@ -21,6 +21,14 @@ Table 1. Default Parameter for network structure
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 200 | 0.2* N_e | 0.05* N_e | 0 | 0.001 | 0.001 | 0.1 | 0.001 | 0 | 1.0 | 0 | 0.5 | 0 |
 
+Table 2. Default Parameter for RM-SORN training
+
+| steps_train | steps_test | interval_train | interval_test |
+| :-: | :-: | :-: | :-: |
+| 20000 | 10000 | 100 | 500 |
+
 Table 2. Network parameters for Counting task
 
-| N_e | 
+| N_e | N_o | N_i | N_u_e | N_u_i | T_o_max | T_o_min | T_e_max | T_e_min | T_i_max | T_i_min | eta_ip_e | eta_ip_o | h_ip_e | h_ip_o | punishment | recurrent_reward | window_size |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 200 | 6 | 0.2* N_e | 0.1* N_e | 0 | 0.5 | 0 | 1.0 | 0 | 1.0 | 0 | 0.001 | 0.005 | 0.1 | [0.05,0.4,0.05,0.05,0.4,0.05] | True | False | 0|
