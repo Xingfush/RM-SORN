@@ -4,10 +4,8 @@ import numpy as np
 import pickle
 import gzip
 import sys
-
 import utils
 from common.synapses import create_matrix
-from common.sources import NoSource
 
 # Intrinsic Plasticity
 def ip(T, x, c):

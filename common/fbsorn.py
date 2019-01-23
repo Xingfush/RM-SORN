@@ -20,11 +20,6 @@ def compute_accuracy(arr,N):
     ind = np.nonzero(arr==0)[0]
     if len(ind)==0:
         return 0
-    # else:
-    #     ind = ind[0]
-    # repeat = (len(arr)-ind)//N
-    # target = list(range(N))*repeat
-    # perf = (arr[ind:ind+repeat*N]==target).sum()/len(target)
     repeat = len(arr)//N
     target = list(range(N))*repeat
     perf = compute_lcs(arr,target)
@@ -34,8 +29,6 @@ def compute_lcs(x,y):
     m = len(x)
     n = len(y)
     c = np.zeros((m + 1, n + 1))
-    # 这里最需要注意的就是i和j的空间是m+1,n+1，向右平移了一位
-    # 索引字符串的时候要相应的减去一位。
     for i in range(1, m + 1):
         for j in range(1, n + 1):
             if x[i - 1] == y[j - 1]:

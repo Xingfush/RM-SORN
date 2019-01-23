@@ -4,12 +4,10 @@ import utils
 from common.sources import CountingSource
 from common.experiments import AbstractExperiment
 from common.fbsorn import FBSorn
-from matplotlib import pyplot as plt
 import os
 import numpy as np
 import gzip
 import pickle
-import csv
 
 n_middle = 8
 n_middles = [4,8,12,16,20,24,28,32]
@@ -64,26 +62,19 @@ class Experiment_test(AbstractExperiment):
         with gzip.open(os.path.join(filepath,'%d-sorn.pickle'
                                              %(np.argmax(accs))),'rb') as f:
             sorn = pickle.load(f)
-        # sorn.W_ee.c.eta_stdp = 0
-        # sorn.W_ei.c.eta_istdp = 0
-        # sorn.W_ee.c.sp_prob = 0
-        # sorn.W_ee.c.no_prune = True
-        # c.eta_ip_e = 0
-        # c.noise_sig = 0
-        # sorn.simulation(c.steps_train)
-        # filename = os.path.join(filepath,'rm-sorn.pickle')
-        # sorn.quicksave()
+        sorn.W_ee.c.eta_stdp = 0
+        sorn.W_ei.c.eta_istdp = 0
+        sorn.W_ee.c.sp_prob = 0
+        sorn.W_ee.c.no_prune = True
+        c.eta_ip_e = 0
+        c.noise_sig = 0
+        sorn.simulation(c.steps_train)
+        filename = os.path.join(filepath,'rm-sorn.pickle')
+        sorn.quicksave()
 
         # --------- Testing Phase ---------
         print('\nTesting Phase: close all plasticity in SORN...')
         sorn.update = False
         sorn.display = True
         sorn.simulation(c.steps_test)
-        # Plotting
-        plt.plot(accs,'r-')
-        plt.ylabel('Performance')
-        plt.xlabel('Steps')
-        plt.axis([0,len(accs),0,1])
-        plt.grid(True)
-        plt.show()
 

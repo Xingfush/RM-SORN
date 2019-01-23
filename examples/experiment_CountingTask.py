@@ -54,7 +54,7 @@ class Experiment_test(AbstractExperiment):
             self.inputsource = CountingSource([word1, word2], m_trans,
                                               c.N_u_e, c.N_u_i, avoid=False)
 
-            for i in range(30):
+            for i in range(100):
                 self.reset(sorn)
                 #----- Input with plasticity
                 print("\nInput plasticity period:")
@@ -132,5 +132,3 @@ class Experiment_test(AbstractExperiment):
         # ans3 = sorn.simulation(c.steps_readouttest)
         #
         # return {'plastic':ans1,'training':ans2,'testing':ans3}
-
-

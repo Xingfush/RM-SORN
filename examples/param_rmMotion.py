@@ -8,7 +8,6 @@ c.N_e = 200
 c.N_o = 32
 c.N_i = int(np.floor(0.2*c.N_e))
 c.N = c.N_e + c.N_i
-# N_u_e属于source的性质，在source的初始化中使用
 c.N_u_e = int(np.floor(0.15*c.N_e))
 c.N_u_i = 0
 

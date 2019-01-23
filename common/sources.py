@@ -204,10 +204,6 @@ class CountingSource(AbstractSource):
         return self.ind+1>=len(self.words[self.word_index])
 
     def predictability(self):
-        """
-        TODO What's happening here? Success of random guessing?
-        :return:
-        """
         temp = self.probs
         for n in range(10):
             temp = temp.dot(temp)

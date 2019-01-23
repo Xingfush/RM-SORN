@@ -3,7 +3,6 @@ import numpy as np
 import pickle
 import gzip
 from collections import deque
-import os
 import sys
 
 import utils
@@ -12,14 +11,13 @@ from common.sources import CountingSource
 
 def compute_accuracy(outputs,targets):
     """
-    Compute accuracy of Counting Tasking based on accuracy.py.
+    Compute accuracy for Counting Tasking, excluding the unpredictable first letter.
     :param outputs: 1-D array
     :param targets: 1-D array
     :return: float, accuracy
     """
     assert len(outputs)==len(targets)
-    except_first = np.where((targets!=0)&(targets!=3))[0] # TODO
-    # except_first = np.where((targets==2)|(targets==5))[0]
+    except_first = np.where((targets!=0)&(targets!=3))[0]
     only_last = np.where((targets==2)|(targets==5))[0]
     targets_red = targets[except_first]
     outputs_red = outputs[except_first]
@@ -32,19 +30,18 @@ def compute_accuracy(outputs,targets):
 
 def predict_accuracy(outputs,targets):
     """
-    Compute accuracy of Counting Tasking based on accuracy.py.
+    Compute accuracy for Motion Predition task..
     :param outputs: 1-D array
     :param targets: 1-D array
     :return: float, accuracy
     """
     assert len(outputs)==len(targets)
-    except_first = np.where((targets!=0) & (targets!=31))[0] # TODO
+    except_first = np.where((targets!=0) & (targets!=7))[0]
     targets_red = targets[except_first]
     outputs_red = outputs[except_first]
     perf_red = (targets_red==outputs_red).sum() /float(len(targets_red))
     return perf_red
 
-# Intrinsic Plasticity
 def ip(T, x, eta_ip, h_ip):
     """
     Perform intrinsic plasticity
@@ -169,8 +166,6 @@ class RMSorn():
             self.m_r = self.m_o
 
         # Apply plasticity mechanisms
-        # ip(self.T_e, x_new, c.eta_ip_e, c.h_ip_e)
-        # ip(self.T_o, o_new, c.eta_ip_o, c.h_ip_o)
         if self.update:
             ip(self.T_e, x_new, c.eta_ip_e, c.h_ip_e)
             ip(self.T_o, o_new, c.eta_ip_o, c.h_ip_o)
@@ -287,7 +282,7 @@ class RMSorn():
                 sys.stdout.write('\rSimulation: %3d%%'%((int)(n/(N-1)*100)))
                 sys.stdout.flush()
         accuracy1,accuracy2 = compute_accuracy(ans['O'], ans['C']) # TODO
-        # accuracy = predict_accuracy(ans['O'], ans['C'])
+        # accuracy = predict_accuracy(ans['O'], ans['C']) # Motion task has only one accuracy
         # if self.display:
             # print('Online RM-SRON performance assess: %0.2f%%\n' % (accuracy*100))
         if self.display:

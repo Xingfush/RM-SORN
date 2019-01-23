@@ -10,7 +10,6 @@ from utils.backup import dest_directory
 from common.sorn import Sorn
 from common.rmsorn import RMSorn
 from common.fbsorn import FBSorn
-# from common.lifsorn import LIFSorn
 
 import pickle as pickle
 import gzip
@@ -21,25 +20,16 @@ def debugger(type,flag):
     import ipdb
     ipdb.set_trace()
 
-# Parameters are read from the second command line argument
-
-# param: para_CountingTask
-# 从命令行读入参数
-# param = import_module(utils.param_file())
 param = import_module('examples.param_rmCounting')
 
 # experiment_module: experiment_CountingTask
-# 导入params and experiment module，可以直接输入
 experiment_module = import_module(param.c.experiment.module)
 experiment_name = param.c.experiment.name
-# 得到一个初始化后的experiment object.
 experiment = getattr(experiment_module,experiment_name)(param)
 
-# 从params 模块导入 params.c
 c = param.c
 c.logfilepath = os.path.abspath(os.path.join(os.getcwd(),".."))
 
-# 从experiments 模块中导入 experiment，得到input source
 source = experiment.start()
 # sorn = Sorn(c,source)
 sorn = RMSorn(c,source)
