@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c7891d1-69f9-4ed2-8efc-9bc11c9773ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/common/accuracy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/fbsorn.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/fbsorn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/rmsorn.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/rmsorn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/single_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/single_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/sorn.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/sorn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/sources.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/sources.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Fig1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/experiment_CountingTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_CountingTask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/experiment_GenerationTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_GenerationTask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/experiment_MotionTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_MotionTask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/experiment_RMTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_RMTask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/param_rmCounting.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/param_rmCounting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/param_rmGeneration.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/param_rmGeneration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/param_rmMotion.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/param_rmMotion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/param_rmOccluder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="6c7891d1-69f9-4ed2-8efc-9bc11c9773ef" name="Default" comment="Second Edition." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +86,8 @@
       <file leaf-file-name="plot_result.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/plot_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="200">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
                 <element signature="e#65#83#0" expanded="true" />
               </folding>
@@ -377,6 +360,14 @@
       <option name="presentableId" value="Default" />
       <updated>1544100996513</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second Edition.">
+      <created>1548209885515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548209885515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -416,8 +407,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13119073" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13119073" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32715377" />
@@ -455,11 +447,48 @@
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Second Edition." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Edition." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,8 +899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/plot_result.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="200">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="e#65#83#0" expanded="true" />
           </folding>
